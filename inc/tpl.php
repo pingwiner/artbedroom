@@ -1,5 +1,7 @@
 <?php
 
+require_once('inc/lang.php');
+
 class Tpl {
   private $html;
   
@@ -13,9 +15,9 @@ class Tpl {
   }
 
   //замена тэгов в шаблоне
-  public function build($args, $lang, $dict = 'common') {
+  public function build($args) {
     $l = Lang::getInstance();
-    $res = $l->translateTokens($lang, $this->html, $dict);
+    $res = $l->translateTokens('ru', $this->html, 'common');
     if (is_array($args)) {
       $res = str_replace(array_keys($args), array_values($args), $res);
     }
