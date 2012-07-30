@@ -40,31 +40,93 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./index.html">Art bedroom</a>
-          <div class="nav-collapse collapse">
+          </button>          
+          <div class="nav-collapse collapse">            
             <ul class="nav">
-              <li class="">
-                <a href="./index.html">Каталог</a>
-              </li>
-              <li class="">
-                <a href="./scaffolding.html">Покупателям</a>
-              </li>
-              <li class="active">
-                <a href="./base-css.html">Информация</a>
+              <li>
+                <a class="brand" href="./index.html">Art bedroom</a>
               </li>
               <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">Heading 1</li>
+                  <li><a href="#">sub-option1</a></li>
+                  <li><a href="#">sub-option2</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Heading 2</li>
+                  <li><a href="#">sub-option1</a></li>
+                  <li><a href="#">sub-option2</a></li>
+                </ul>
+              </li>              
+              
+              <li class="">
+                <a href="./scaffolding.html">Оплата и доставка</a>
+              </li>
               <li class="">
                 <a href="./download.html">Контакты</a>
               </li>
             </ul>
-          </div>
+          </div>          
+          <form class="navbar-search pull-right" action="">
+            <input type="text" class="search-query span3" placeholder="Search">
+          </form>          
         </div>
       </div>
     </div>
 
     <div class="container">
-      {CONTENT}
+      
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1000/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1001/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1002/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1003/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1004/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1004/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1004/thumb.jpg" />          
+        </a>
+      </div>
+      <div class="span2">
+        <div class="title">Название</div>
+        <a href="">
+          <img src="images/1004/thumb.jpg" />          
+        </a>
+      </div>
+
+      
     </div>  
   </body>
 </html>

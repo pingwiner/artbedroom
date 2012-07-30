@@ -6,15 +6,19 @@
   require_once('inc/tpl.php');
   require_once('inc/helpers.php');    
   require_once('inc/settings.php');   
+  require_once('inc/catalog.php');   
 
   $settings = new Settings(); 
   
   session_start();
   Db::connect();
   
-  $tpl = new Tpl('page');  
+  $catalog =   
   
+  $tpl = new Tpl('page');  
+   
   print $tpl->build(array(
-    '{CONTENT}' => '',
+    '{CONTENT}' => $content,
+    '{CATALOG}' => $catalog,  
   ));
   exit;  
