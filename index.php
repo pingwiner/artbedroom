@@ -13,10 +13,11 @@
   session_start();
   Db::connect();
   
-  $catalog =   
+  $catalog = getMenu();  
   
   $tpl = new Tpl('page');  
    
+  $content = '';
   print $tpl->build(array(
     '{CONTENT}' => $content,
     '{CATALOG}' => $catalog,  

@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon-precomposed" href="{bp}/ico/apple-touch-icon-57-precomposed.png">
     <script src="{bp}/js/jquery-1.7.2.min.js"></script>
     <script src="{bp}/js/bootstrap.min.js"></script>
+    <script src="{bp}/js/menu.js"></script>
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
@@ -47,17 +48,9 @@
                 <a class="brand" href="./index.html">Art bedroom</a>
               </li>
               <li class="divider-vertical"></li>
-              <li class="dropdown">
+              <li class="dropdown" id="catalog">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="nav-header">Heading 1</li>
-                  <li><a href="#">sub-option1</a></li>
-                  <li><a href="#">sub-option2</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Heading 2</li>
-                  <li><a href="#">sub-option1</a></li>
-                  <li><a href="#">sub-option2</a></li>
-                </ul>
+                {CATALOG}
               </li>              
               
               <li class="">
@@ -128,5 +121,6 @@
 
       
     </div>  
+  
   </body>
 </html>
