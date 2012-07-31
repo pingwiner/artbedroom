@@ -1,0 +1,2 @@
+RewriteEngine on 
+RewriteRule ^catalog/(.*)$ /index.php?action=catalog&id=$1
