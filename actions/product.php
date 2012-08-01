@@ -14,12 +14,10 @@ class ActionController {
   
   public function getContent() {
     $id = $this->getParam('id', 0);
+    if (!$id) return '';
     
-    if ($id)
-      $q = Db::select('products', array('catalog' => $id));
-    else 
-      $q = Db::select('products');
-    $tpl = new Tpl('product_preview');
+    $q = Db::select('products', array('id' => $id));
+    $tpl = new Tpl('product');
     $result = '';
     while($r = Db::row($q)) {
       $result .= $tpl->build(array(

@@ -68,58 +68,8 @@
       </div>
     </div>
 
-    <div class="container">
-      
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1000/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1001/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1002/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1003/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1004/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1004/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1004/thumb.jpg" />          
-        </a>
-      </div>
-      <div class="span2">
-        <div class="title">Название</div>
-        <a href="">
-          <img src="images/1004/thumb.jpg" />          
-        </a>
-      </div>
-
-      
+    <div class="container">   
+      {CONTENT}      
     </div>  
   
   </body>

@@ -19,7 +19,10 @@
   $actions = array(
     'catalog' => array(
        'id' => PARAM_TYPE_INT
-    )
+    ),
+    'product' => array(
+       'id' => PARAM_TYPE_INT
+    ),      
   );
   
   $action = null;
@@ -49,9 +52,8 @@
   
   $catalog = getMenu();  
   
-  $tpl = new Tpl('page');  
-   
-  $content = '';
+  $tpl = new Tpl('page');     
+
   print $tpl->build(array(
     '{CONTENT}' => $content,
     '{CATALOG}' => $catalog,  
