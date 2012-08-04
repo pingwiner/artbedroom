@@ -15,7 +15,7 @@ class Tpl {
   }
 
   //замена тэгов в шаблоне
-  public function build($args) {
+  public function build($args = null) {
     $l = Lang::getInstance();
     $res = $l->translateTokens('ru', $this->html, 'common');
     if (is_array($args)) {

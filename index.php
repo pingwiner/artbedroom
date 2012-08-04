@@ -5,13 +5,10 @@
   require_once('inc/db.php');
   require_once('inc/tpl.php');
   require_once('inc/helpers.php');    
-  require_once('inc/settings.php');   
   require_once('inc/catalog.php');   
 
   define('PARAM_TYPE_INT', 1);
   define('PARAM_TYPE_STRING', 2); 
-  
-  $settings = new Settings(); 
   
   session_start();
   Db::connect();
@@ -28,18 +25,43 @@
     ),
     'contacts' => array(
         
+    ),
+    'search' => array(
+      '#post' => true,  
+      'q'     => PARAM_TYPE_STRING  
+    ),  
+    'buy' => array(
+      '#post'     => true,   
+      '#ajax'     => true,  
+      'id'        => PARAM_TYPE_INT,
+      'color'     => PARAM_TYPE_INT,
+      'size'      => PARAM_TYPE_INT,
+      'phone'     => PARAM_TYPE_STRING,
+      'username'  => PARAM_TYPE_STRING,
+      'message'   => PARAM_TYPE_STRING,        
     )  
   );
-  
+
   $action = null;
   if (isset($_GET['action'])) $action = $_GET['action'];
   if (!key_exists($action, $actions)) {
     $action = 'catalog';    
-  }
+  } 
   
   $params = array();
-  foreach($_GET as $k => $v) {
+  if (isset($actions[$action]['#post']) && ($actions[$action]['#post'] == true))
+    $data = &$_POST;
+  else
+    $data =&$_GET;
+  
+  if (isset($actions[$action]['#ajax']) && ($actions[$action]['#ajax'] == true))
+    $ajax = true;
+  else
+    $ajax = false;
+  
+  foreach($data as $k => $v) {    
     if ($k == 'action') continue;
+    if (substr($k, 0, 1) == '#') continue;
     if (!isset($actions[$action][$k])) continue;
     switch($actions[$action][$k]) {
       case PARAM_TYPE_INT:
@@ -54,6 +76,10 @@
   include('actions/'.$action.'.php');
   $ac = new ActionController($params);
   $content = $ac->getContent();  
+  if ($ajax) {
+    print $content;
+    exit;
+  }  
   $catalog = getMenu();  
   $title = $ac->getTitle();
   if ($title) $title .= ' - ';

@@ -36,9 +36,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-
-
-  <!-- Navbar
+    <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -66,17 +64,17 @@
               </li>
             </ul>
           </div>          
-          <form class="navbar-search pull-right" id="search-form" action="/search">
-            <input type="text" id="search" name="key" class="search-query span3" placeholder="Search">
+          <form class="navbar-search pull-right" id="search-form" action="/search" method="post">
+            <input type="text" id="search" name="q" class="search-query span3" placeholder="Поиск">
           </form>          
         </div>
       </div>
     </div>
 
-    <div class="container">   
+    <div class="container container-fluid">   
       {CONTENT}      
     </div>  
-  
+
     <div class="hidden">
       <div id="fancy-title">        
           <table cellspacing="0" cellpadding="0" id="fancybox-title-float-wrap">

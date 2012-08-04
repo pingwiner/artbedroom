@@ -9,11 +9,20 @@
 
 .product .title {
   text-align: center;
-  background: #ccc;  
+
 }
 
 .product .title a {
   color: black;
+}
+
+.product .image {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  line-height: 1;
+  padding: 4px;
 }
 
 .fancybox-title-text {
@@ -38,14 +47,66 @@
   width: 100px;
   float: left;
   display: block;
-  color: black;
+  color: #444;
+  text-rendering: optimizelegibility;
+  text-shadow: none;
+  font-size: 10pt;
 }
 
 .product-full .field-description .value {
   display: inline-block;
 }
 
-.product-full h1 {
-  margin-top: 20px;
+.container h1 {
   font-size: 14pt;
+  color: #444;  
+}
+
+.product-full h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;}
+
+.thumbs {
+  margin-top: 20px;
+}
+
+.product-full .cool-box {
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 19px;
+}
+
+.floating-box {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-params {
+  
+}
+
+.product-img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#buy .icon-shopping-cart {
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.cart {
+  margin-top: 20px;  
+}
+
+.cart #buy {
+  float: right;
+}
+
+.modal-body .field {
+  margin-bottom: 10px;
 }

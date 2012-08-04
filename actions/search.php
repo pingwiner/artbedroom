@@ -2,15 +2,9 @@
 
 class ActionController {
   private $params;
-  private $catalog;
-  private $valid;
   
   public function __construct($params) {
     $this->params = $params;
-    $this->valid = false;
-    $id = $this->getParam('id');
-    $q = Db::select('menu', array('id' => $id));
-    if ($this->catalog = Db::row($q)) $this->valid = true;
   }
   
   private function getParam($paramName, $defaultValue = null) {
@@ -19,16 +13,15 @@ class ActionController {
   }
   
   public function getContent() {
-    $id = $this->getParam('id');
-    if (!$id) return '';
-    
-    if ($id)
-      $q = Db::select('products', array(
-        'catalog' => $id,
-        'visible' => 1,      
-      ));
-    else 
-      $q = Db::select('products');
+    $search = $this->getParam('q');
+    if (!$search) return 'Ничего не найдено';
+    $search = mysql_real_escape_string($search);
+    $q = Db::query("select p.id, p.title from `products` as p
+            left join `materials` as m on m.id = p.material_id
+      where p.title LIKE '%$search%' 
+            or p.description LIKE '%$search%'
+            or m.name LIKE '%$search%'
+            or p.sku = '$search'");
     $tpl = new Tpl('product_preview');
     $result = '';
     while($r = Db::row($q)) {
@@ -39,19 +32,17 @@ class ActionController {
     }
     $tpl = new Tpl('catalog');
     return $tpl->build(array(
-      '{TITLE}' => $this->catalog['title'],  
+      '{TITLE}' => $search,  
       '{CONTENT}' => $result 
     ));            
   }
 
   public function getTitle() {
-    if (!$this->valid) return '';
-    return $this->catalog['title'];  
+    return '';  
   }
   
   public function getDescription() {
-    if (!$this->valid) return '';
-    return $this->catalog['title'];  
+    return '';
   }
   
 }

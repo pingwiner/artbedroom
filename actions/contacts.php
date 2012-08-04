@@ -13,7 +13,8 @@ class ActionController {
   }
   
   public function getContent() {
-    return '';
+    $tpl = new Tpl('contacts');
+    return $tpl->build();
   }
 
   public function getTitle() {
