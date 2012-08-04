@@ -10,6 +10,6 @@ $(document).ready(function() {
     }
   }); 
   $('#catalog ul').hide();
-  $('#catalog > ul').show();
+  //$('#catalog > ul').show();
   
 });

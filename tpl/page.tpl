@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{TITLE}</title>
+    <title>{TITLE}Магазин постельного белья Art Bedroom</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="{DESCRIPTION}">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="{bp}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{bp}/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="{bp}/css/docs.css" rel="stylesheet">
-    <link href="{bp}/css/style.css" rel="stylesheet">    
+    <link href="{bp}/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">    
+    <link href="{bp}/css/style.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -27,6 +28,11 @@
     <script src="{bp}/js/jquery-1.7.2.min.js"></script>
     <script src="{bp}/js/bootstrap.min.js"></script>
     <script src="{bp}/js/menu.js"></script>
+    <script src="{bp}/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="{bp}/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script src="{bp}/fancybox/jquery.easing-1.3.pack.js"></script>    
+    <script src="{bp}/js/gallery.js"></script>
+    <script src="{bp}/js/search.js"></script>
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
@@ -45,24 +51,23 @@
           <div class="nav-collapse collapse">            
             <ul class="nav">
               <li>
-                <a class="brand" href="./index.html">Art bedroom</a>
+                <a class="brand" href="/">Art bedroom</a>
               </li>
               <li class="divider-vertical"></li>
-              <li class="dropdown" id="catalog">
+              <li class="dropdown{CATALOG_ACTIVE}" id="catalog">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог <b class="caret"></b></a>
                 {CATALOG}
               </li>              
-              
-              <li class="">
-                <a href="./scaffolding.html">Оплата и доставка</a>
+              <li class="{PAYMENT_ACTIVE}">
+                <a href="/payment">Оплата и доставка</a>
               </li>
-              <li class="">
-                <a href="./download.html">Контакты</a>
+              <li class="{CONTACTS_ACTIVE}">
+                <a href="/contacts">Контакты</a>
               </li>
             </ul>
           </div>          
-          <form class="navbar-search pull-right" action="">
-            <input type="text" class="search-query span3" placeholder="Search">
+          <form class="navbar-search pull-right" id="search-form" action="/search">
+            <input type="text" id="search" name="key" class="search-query span3" placeholder="Search">
           </form>          
         </div>
       </div>
@@ -72,5 +77,20 @@
       {CONTENT}      
     </div>  
   
+    <div class="hidden">
+      <div id="fancy-title">        
+          <table cellspacing="0" cellpadding="0" id="fancybox-title-float-wrap">
+            <tbody>
+              <tr>
+                <td id="fancybox-title-float-left"></td>
+                <td id="fancybox-title-float-main">
+                  <a href="/product/(ID)">(TITLE)</a>
+                </td>
+                <td id="fancybox-title-float-right"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>  
+    </div>
   </body>
 </html>

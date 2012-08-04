@@ -1,3 +1,51 @@
 #catalog .submenu {
   list-style-type: none;
 }
+
+.product {
+  height: 200px;
+  width: 150px;
+}
+
+.product .title {
+  text-align: center;
+  background: #ccc;  
+}
+
+.product .title a {
+  color: black;
+}
+
+.fancybox-title-text {
+  
+}
+
+.hidden {
+  display: none;
+}
+
+#fancybox-title-float-main a {
+  color: white;
+}
+
+.product-full .field {
+  margin: 10px 0 0 0; 
+}
+
+.product-full .field .label {
+  background: none;
+  font-weight: bold;
+  width: 100px;
+  float: left;
+  display: block;
+  color: black;
+}
+
+.product-full .field-description .value {
+  display: inline-block;
+}
+
+.product-full h1 {
+  margin-top: 20px;
+  font-size: 14pt;
+}

@@ -39,5 +39,3 @@
     return decorate($tree);
   }
 
-
-?>

@@ -9,7 +9,7 @@
   require_once('inc/catalog.php');   
 
   define('PARAM_TYPE_INT', 1);
-  define('PARAM_TYPE_STRING', 2);
+  define('PARAM_TYPE_STRING', 2); 
   
   $settings = new Settings(); 
   
@@ -23,11 +23,17 @@
     'product' => array(
        'id' => PARAM_TYPE_INT
     ),      
+    'payment' => array(
+        
+    ),
+    'contacts' => array(
+        
+    )  
   );
   
   $action = null;
   if (isset($_GET['action'])) $action = $_GET['action'];
-  if (!in_array($action, $actions)) {
+  if (!key_exists($action, $actions)) {
     $action = 'catalog';    
   }
   
@@ -46,16 +52,22 @@
   }
   
   include('actions/'.$action.'.php');
-  
   $ac = new ActionController($params);
-  $content = $ac->getContent();
-  
+  $content = $ac->getContent();  
   $catalog = getMenu();  
+  $title = $ac->getTitle();
+  if ($title) $title .= ' - ';
+  $description = $ac->getDescription();
   
   $tpl = new Tpl('page');     
 
   print $tpl->build(array(
     '{CONTENT}' => $content,
     '{CATALOG}' => $catalog,  
+    '{TITLE}' => strip_tags($title),
+    '{DESCRIPTION}' => strip_tags($description),  
+    '{PAYMENT_ACTIVE}' => ($action == 'payment')?'active':'',
+    '{CONTACTS_ACTIVE}' => ($action == 'contacts')?'active':'',      
+    '{CATALOG_ACTIVE}' => (in_array($action, array('catalog', 'product')))?' active':'',  
   ));
   exit;  

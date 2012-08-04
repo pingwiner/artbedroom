@@ -1,3 +1,6 @@
 RewriteEngine on 
-RewriteRule ^catalog/(.*)$ /index.php?action=catalog&id=$1
-RewriteRule ^product/(.*)$ /index.php?action=product&id=$1
+RewriteRule ^catalog/(\d+)$ /index.php?action=catalog&id=$1
+RewriteRule ^product/(\d+)$ /index.php?action=product&id=$1
+RewriteRule ^payment$ /index.php?action=payment
+RewriteRule ^contacts$ /index.php?action=contacts
+
