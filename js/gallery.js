@@ -2,7 +2,7 @@ var template = '';
 
 function title(text) {
   var id = $('#fancybox-img').attr('src').split('/')[4];  
-  var txt = template.replace('%28ID%29', id);
+  var txt = template.replace('ID', id);
   return txt.replace('(TITLE)', 'Купить "' + text + '"');
 }
 

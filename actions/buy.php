@@ -41,7 +41,8 @@ class ActionController {
            '{TITLE}' => $product['title'],
            '{SKU}' => $product['sku'],      
            '{PHONE}' => $phone,
-           '{USERNAME}' => $username  
+           '{USERNAME}' => $username,
+           '{MESSAGE}' => $message 
          )),
          'From: robot@artbedroom.ru' . "\r\n" .
          'Reply-To: robot@artbedroom.ru'. "\r\n".

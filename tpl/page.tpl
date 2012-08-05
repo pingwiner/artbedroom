@@ -41,6 +41,10 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
+          <form class="navbar-search pull-right" id="search-form" action="/search" method="post">
+            <input type="text" id="search" name="q" class="search-query span3" placeholder="Поиск">
+          </form>          
+
           <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -64,9 +68,6 @@
               </li>
             </ul>
           </div>          
-          <form class="navbar-search pull-right" id="search-form" action="/search" method="post">
-            <input type="text" id="search" name="q" class="search-query span3" placeholder="Поиск">
-          </form>          
         </div>
       </div>
     </div>
@@ -82,7 +83,7 @@
               <tr>
                 <td id="fancybox-title-float-left"></td>
                 <td id="fancybox-title-float-main">
-                  <a href="/product/(ID)">(TITLE)</a>
+                  <a href="/product/ID">(TITLE)</a>
                 </td>
                 <td id="fancybox-title-float-right"></td>
               </tr>

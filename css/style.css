@@ -110,3 +110,33 @@
 .modal-body .field {
   margin-bottom: 10px;
 }
+
+.navbar .navbar-inner .btn-navbar {
+  float: left;
+}
+
+ul.slides {
+  list-style-type: none;
+}
+
+.trenner_heading {
+  background: url("../img/trenner_heading_back.png") repeat-x scroll 0 7px transparent;
+  color: #9B9B9B;
+  display: block;
+  font: 14px/1.2em 'PT Sans Narrow',sans-serif;
+  margin-bottom: 15px;
+}
+
+.trenner_heading span {
+  background-color: #FFFFFF;
+  margin-left: 4px;
+  padding: 0 8px 0 3px;
+}
+
+#teaser {
+  margin-bottom: 30px;
+}
+
+.boxes .first {
+  margin-left: 0;
+}

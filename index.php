@@ -39,13 +39,15 @@
       'phone'     => PARAM_TYPE_STRING,
       'username'  => PARAM_TYPE_STRING,
       'message'   => PARAM_TYPE_STRING,        
+    ),
+    'index' => array(       
     )  
   );
 
-  $action = null;
+  $action = 'index';
   if (isset($_GET['action'])) $action = $_GET['action'];
   if (!key_exists($action, $actions)) {
-    $action = 'catalog';    
+    $action = 'index';    
   } 
   
   $params = array();
