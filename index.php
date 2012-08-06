@@ -6,6 +6,7 @@
   require_once('inc/tpl.php');
   require_once('inc/helpers.php');    
   require_once('inc/catalog.php');   
+  require_once('inc/price.php');   
 
   define('PARAM_TYPE_INT', 1);
   define('PARAM_TYPE_STRING', 2); 

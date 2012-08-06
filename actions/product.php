@@ -81,7 +81,7 @@ class ActionController {
       '{COLOR_OPTIONS}' => html_options($colors), 
       '{SKU}' => $r['sku'],  
       '{DESCRIPTION}' => $r['description'],  
-      '{PRICE}' => $r['client_price'].'р.',
+      '{PRICE}' => getUserPrice($r).'р.',
       '{QTY}' => $r['qty'],  
       '{MATERIAL}' => $material,  
       '{CATALOG}' => $catalog,  
