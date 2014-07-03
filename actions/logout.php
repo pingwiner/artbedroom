@@ -12,7 +12,7 @@ class ActionController {
   }
 
   public function getDescription() {
-    return "Страница авторизаии";
+    return "Страница авторизации";
   }
 
   public function getContent() {
