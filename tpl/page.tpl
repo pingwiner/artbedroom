@@ -11,7 +11,7 @@
     <link href="{bp}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{bp}/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="{bp}/css/docs.css" rel="stylesheet">
-    <link href="{bp}/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">    
+    <link href="{bp}/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
     <link href="{bp}/css/style.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -30,7 +30,7 @@
     <script src="{bp}/js/menu.js"></script>
     <script src="{bp}/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="{bp}/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script src="{bp}/fancybox/jquery.easing-1.3.pack.js"></script>    
+    <script src="{bp}/fancybox/jquery.easing-1.3.pack.js"></script>
     <script src="{bp}/js/gallery.js"></script>
     <script src="{bp}/js/search.js"></script>
   </head>
@@ -43,14 +43,14 @@
         <div class="container">
           <form class="navbar-search pull-right" id="search-form" action="/search" method="post">
             <input type="text" id="search" name="q" class="search-query span3" placeholder="Поиск">
-          </form>          
+          </form>
 
           <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>          
-          <div class="nav-collapse collapse">            
+          </button>
+          <div class="nav-collapse collapse">
             <ul class="nav">
               <li>
                 <a class="brand" href="/">Art bedroom</a>
@@ -59,25 +59,25 @@
               <li class="dropdown{CATALOG_ACTIVE}" id="catalog">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог <b class="caret"></b></a>
                 {CATALOG}
-              </li>              
+              </li>
               <li class="{PAYMENT_ACTIVE}">
                 <a href="/payment">Оплата и доставка</a>
               </li>
               <li class="{CONTACTS_ACTIVE}">
-                <a href="/contacts">Контакты</a>
+                <a href="/logout">Выход</a>
               </li>
             </ul>
-          </div>          
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container container-fluid">   
-      {CONTENT}      
-    </div>  
+    <div class="container container-fluid">
+      {CONTENT}
+    </div>
 
     <div class="hidden">
-      <div id="fancy-title">        
+      <div id="fancy-title">
           <table cellspacing="0" cellpadding="0" id="fancybox-title-float-wrap">
             <tbody>
               <tr>
@@ -89,7 +89,7 @@
               </tr>
             </tbody>
           </table>
-      </div>  
+      </div>
     </div>
   </body>
 </html>

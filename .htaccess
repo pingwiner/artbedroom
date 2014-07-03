@@ -1,8 +1,10 @@
-RewriteEngine on 
+RewriteEngine on
 RewriteRule ^catalog/(\d+)$ /index.php?action=catalog&id=$1
 RewriteRule ^product/(\d+)$ /index.php?action=product&id=$1
 RewriteRule ^payment$ /index.php?action=payment
 RewriteRule ^contacts$ /index.php?action=contacts
 RewriteRule ^search$ /index.php?action=search
 RewriteRule ^buy$ /index.php?action=buy
-
+RewriteRule ^login$ /index.php?action=login
+RewriteRule ^auth$ /index.php?action=auth
+RewriteRule ^logout$ /index.php?action=logout

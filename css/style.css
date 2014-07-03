@@ -26,7 +26,7 @@
 }
 
 .fancybox-title-text {
-  
+
 }
 
 .hidden {
@@ -38,7 +38,7 @@
 }
 
 .product-full .field {
-  margin: 10px 0 0 0; 
+  margin: 10px 0 0 0;
 }
 
 .product-full .field .label {
@@ -59,7 +59,7 @@
 
 .container h1 {
   font-size: 14pt;
-  color: #444;  
+  color: #444;
 }
 
 .product-full h1 {
@@ -86,7 +86,7 @@
 }
 
 .product-params {
-  
+
 }
 
 .product-img {
@@ -100,7 +100,7 @@
 }
 
 .cart {
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .cart #buy {
@@ -139,4 +139,26 @@ ul.slides {
 
 .boxes .first {
   margin-left: 0;
+}
+
+.field-description .value {
+  margin-left: 20px;
+}
+
+.first-page-promo {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.first-page-promo li {
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+.btn-block {
+    -moz-box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
 }

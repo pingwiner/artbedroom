@@ -9,11 +9,15 @@
 		</div>
 	</div>
 	<div class="span3 last-child">
-		<h1>Webdesign,<br>
-    Webentwicklung &amp;<br>
-    Content fürs Web.</h1>
-    <p>Sie benötigen eine Webseite, einen Blog oder möchten ein großes Projekt im Web umsetzen? Wir realisieren und betreuen Websites &amp; Blogs, programmieren Web-Applikationen und setzen Gewinnspiele &amp; Apps in Social-Networks um!</p>
-    <p>Wir liefern Ihnen Layouts, Umsetzung und Support, Texte und Content-Strategien &ndash; mit dem Gespür für Sie und Ihre Zielgruppen.</p>
+		<h1>Постельное белье в Самаре</h1>
+    <p>Мы предлагаем широкий ассортимент постельного белья</p>
+    <p>У нас вы найдете элитное постельное белье Торговых Марок: Арт-Постель, Волшебная ночь, Verossa.
+    <ul class="first-page-promo">
+<li> Подарок для Вас и Ваших близких в красивой упаковке !</li>
+<li> Стильные решения для Вашего дома;</li>
+<li> 100% натуральная ткань к которой приятно прикасаться;</li>
+<li> Постельное белье не линяет - используются качественные и безопасные красители;</li>
+<li> Красивые и разнообразные рисунки;</li></ul></p>
 	</div>
 </div>
 
@@ -28,18 +32,18 @@
 		<p>
     </p>
     <h3>Детское постельное белье</h3>
-    <p>Ganzheitlich gedachte Designs und eine professionelle Umsetzung Ihrer Wünsche aus einer Hand: flexibel, effektiv &amp; zeitsparend!</p>	
+    <p>В нашем интернет-магазине предлагается большое количество видов постельного белья для детских комнат. Оно сделано качественно, соответственно необходимым требованиям, из натуральных материалов.</p>	
   </div>
 	<div class="span3">
 		<p>
     </p>
     <h3>Постельное белье из бязи</h3>
-    <p>Glaubwürdige &amp; aktivierende Texte mit spannendem &amp; präzisem Content für Ihr Marketing auf Websites, in Newslettern und Social Media.</p>	
+    <p>Бязь — хлопчатобумажная плотная ткань полотняного переплетения, В настоящее время бязь — основной вид постельных тканей для пошива постельного белья. Бязевое бельё, по свидетельству хозяек, выдерживает бесконечное число стирок, к тому же стоит сравнительно недорого. </p>	
   </div>
 	<div class="span3">
 		<p>
     </p>
     <h3>Постельные принадлежности</h3>
-    <p>Erhalten Sie neue Fans durch Gewinnspiele und individuelle Apps z.B. auf Facebook. Wir betreuen Ihre Aktionen und setzen Sie um!</p>	</div>
+    <p>Постельные принадлежности от ТМ &laquo;АртПостель&raquo; &ndash; верное решение, подкрепленное  достойным качеством, и оптимальной ценой. При пошиве пододеяльников, простыней, наволочек используются исключительно натуральные ткани.</p>	</div>
 </div>
 
